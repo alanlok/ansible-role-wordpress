@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: darthwade
+  author: alanlok
   description: Wordpress
-  company: "7ninjas.com"
+  company: "wlx.ca"
   license: "MIT"
   min_ansible_version: 1.4
   platforms:

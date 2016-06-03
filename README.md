@@ -1,7 +1,4 @@
 # Ansible Role: WordPress
-[![Build Status](https://travis-ci.org/darthwade/ansible-role-wordpress.png)](https://travis-ci.org/darthwade/ansible-role-wordpress)
-[![Gittip](http://img.shields.io/gittip/darthwade.svg)](https://www.gittip.com/darthwade/)
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=darthwade&url=https://github.com/darthwade/ansible-role-wordpress&title=Ansible Role: WordPress&language=&tags=github&category=software) 
 
 Ansible role that installs and configures WordPress.
 
@@ -9,6 +6,8 @@ Features include:
 - Installation of any WordPress version to specified directory
 - Configuration of wp-config.php
 - Fetch random salts for wp-config.php (https://api.wordpress.org/secret-key/1.1/salt/)
+
+Forked from: darthwade/ansible-role-wordpress
 
 ## Installation
 
@@ -24,7 +23,7 @@ $ arm install darthwade.wordpress
 
 Using `git`:
 ```shell 
-$ git clone https://github.com/darthwade/ansible-role-wordpress.git
+$ git clone https://github.com/alanlok/ansible-role-wordpress.git
 ```
 
 ## Requirements & Dependencies
@@ -46,6 +45,9 @@ wp_db_charset: 'utf8'
 wp_db_collate: ''
 wp_table_prefix: 'wp_'
 wp_debug: false
+
+apache_user: 'www-data'
+apache_group: 'www-data'
 
 wp_fs_method: 'direct'
 wp_lang: ''
